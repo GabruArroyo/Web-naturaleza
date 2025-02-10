@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog Gabriel Arroyo</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      body, html {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+      }
+      body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      main {
+        flex: 1;
+        padding: 20px;
+        background-color: #f8b3a2;
+        text-align: center;
+      }
+      .card {
+        background-color: white;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        margin-bottom: 20px;
+        max-width: 800px;
+        width: 100%;
+      }
+      form {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        background-color: #ff7e5f(112, 91, 91);
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        max-width: 600px;
+        margin: 0 auto;
+      }
+      label {
+        font-weight: bold;
+      }
+      input, textarea {
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        font-size: 16px;
+      }
+      input[type="submit"] {
+        background: linear-gradient(145deg, #ff7e5f, #feb47b);
+        color: white;
+        border: none;
+        cursor: pointer;
+      }
+      input[type="submit"]:hover {
+        background: linear-gradient(145deg, #ff7e5f, #feb47b);
+      }
+      footer {
+        background: linear-gradient(-145deg, #ff7e5f, #feb47b);
+        color: rgb(0, 0, 0);
+        text-align: center;
+        padding: 10px 0;
+        width: 100%;
+      }
+      a {
+        color: #fff;
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+      h2 {
+        text-align: center;
+      }
+      p {
+        text-align: center;
+      }
+      img {
+        display: block;
+        margin: 10px auto;
+      }
+      h3 {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="creative-header">
+      <div class="logo">
+        <li>Bilogia</li>
+      </div>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Acerca de</a></li>
+          <li><a href="#">Servicios</a></li>
+          <li><a href="#">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="card">
+        <h2>¿Que es?</h2>
+        <p>La biología es la ciencia que se dedica al estudio de los seres vivos y los procesos vitales. Abarca una amplia gama de temas, desde la estructura y función de los organismos, hasta la evolución, ecología y genética. Los biólogos investigan cómo funcionan los organismos a nivel molecular y celular, cómo interactúan con su entorno y cómo se desarrollan y evolucionan a lo largo del tiempo. En resumen, la biología nos ayuda a entender la vida en todas sus formas y niveles de organización. 🧬🌿🦋</p>
+        <img src="planta.jfif" width="500" height="300">
+      </section>
+      <section class="card">
+        <h2>Tiene diferentes ramas</h2>
+        <p>La biología es una ciencia vasta y diversa que se divide en varias ramas especializadas para estudiar diferentes aspectos de los seres vivos. Algunas de las principales ramas de la biología incluyen:</p>
+        <p>Biología molecular: Estudia la estructura y función de las moléculas esenciales para la vida, como el ADN, el ARN y las proteínas.</p>
+        <p>Genética: Se centra en la herencia y la variación de los organismos, explorando cómo se transmiten los genes de una generación a otra.</p>
+        <p>Ecología: Analiza las interacciones entre los organismos y su entorno, incluyendo los ecosistemas y las relaciones entre las especies.</p>
+        <p>Microbiología: Estudia los microorganismos, como bacterias, virus y hongos, y su papel en la salud y el medio ambiente.</p>
+        <p>Zoología: Se enfoca en el estudio de los animales, su comportamiento, anatomía, fisiología y evolución.</p>
+        <p>Botánica: Investiga las plantas, su estructura, función, crecimiento, reproducción y evolución.</p>
+        <p>Biología celular: Examina la estructura y función de las células, que son las unidades básicas de la vida.</p>
+        <p>Anatomía: Estudia la estructura de los organismos, especialmente la organización y disposición de sus partes.</p>
+        <p>Fisiología: Analiza las funciones y procesos vitales de los organismos vivos y sus órganos.</p>
+        <p>Evolución: Investiga los cambios en las características hereditarias de las poblaciones a lo largo del tiempo y cómo estos cambios han dado lugar a la diversidad de la vida.</p>
+        <p>Cada una de estas ramas ofrece una perspectiva única y complementaria sobre la vida y sus procesos.</p>
+        <img id="second-image" src="biologia.jpg" width="500" height="250">
+      </section>
+      <section class="card">
+        <form>
+          <h3>Formulario</h3>
+          <label for="nombre">Nombre completo:</label>
+          <input type="text" id="nombre" name="nombre" required>
+          <label for="email">Correo electrónico:</label>
+          <input type="email" id="email" name="email" required>
+          <label for="fecha_nacimiento">Fecha de nacimiento:</label>
+          <input type="date" id="fecha_nacimiento" name="fecha_nacimiento">
+          <label for="mensaje">Mensaje:</label>
+          <textarea id="mensaje" name="mensaje" rows="4"></textarea>
+          <input type="submit" value="Enviar">
+        </form>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; 2025 Tu Blog. Todos los derechos reservados.</p>
+      <p><a href="https://www.youtube.com/privacidad">Política de Privacidad</a> | <a href="https://www.youtube.com/contacto">Contacto</a></p>
+    </footer>
+  </body>
+</html>
